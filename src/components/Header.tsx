@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Plus, Home, Moon, Sun, Search, Settings } from 'lucide-react';
+import { Plus, Home, Moon, Sun, Settings } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Header: React.FC = () => {

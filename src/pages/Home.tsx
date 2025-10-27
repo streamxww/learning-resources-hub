@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, Grid, List } from 'lucide-react';
 import { useResources } from '../context/ResourceContext';
-import { LearningResource, FilterOptions } from '../types';
+import { FilterOptions } from '../types';
 import ResourceCard from '../components/ResourceCard';
 import FilterPanel from '../components/FilterPanel';
 import StatsPanel from '../components/StatsPanel';

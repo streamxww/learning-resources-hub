@@ -17,7 +17,7 @@ const Settings: React.FC = () => {
   
   const [binId, setBinId] = useState('');
   const [apiKey, setApiKey] = useState('');
-  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [isOnline] = useState(navigator.onLine);
 
   const handleSaveSettings = () => {
     if (binId && apiKey) {

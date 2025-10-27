@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Star, Clock, TrendingUp, Heart, Eye } from 'lucide-react';
+import { BookOpen, Star, TrendingUp, Heart } from 'lucide-react';
 import { LearningResource } from '../types';
 
 interface StatsPanelProps {
@@ -111,7 +111,7 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ resources }) => {
         variants={containerVariants}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
       >
-        {statCards.map((stat, index) => {
+            {statCards.map((stat) => {
           const Icon = stat.icon;
           return (
             <motion.div

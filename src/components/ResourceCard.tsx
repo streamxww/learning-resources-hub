@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Star, Clock, User, Tag, Heart } from 'lucide-react';
+import { ExternalLink, Star, Clock, User, Heart } from 'lucide-react';
 import { LearningResource } from '../types';
 import { useResources } from '../context/ResourceContext';
 

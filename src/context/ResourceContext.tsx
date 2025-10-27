@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useCloudSync } from '../hooks/useCloudSync';
 import { LearningResource, Category } from '../types';
@@ -34,8 +34,8 @@ export function ResourceProvider({ children }: { children: React.ReactNode }) {
   const [resources, setResources] = useLocalStorage<LearningResource[]>('resources', []);
   const [categories, setCategories] = useLocalStorage<Category[]>('categories', defaultCategories);
   const [enableCloudSync, setEnableCloudSync] = useLocalStorage<boolean>('enableCloudSync', false);
-  const [binId, setBinId] = useLocalStorage<string>('binId', '');
-  const [apiKey, setApiKey] = useLocalStorage<string>('apiKey', '');
+  const [binId] = useLocalStorage<string>('binId', '');
+  const [apiKey] = useLocalStorage<string>('apiKey', '');
   
   const { isOnline, lastSync, syncStatus, loadFromCloud, saveToCloud } = useCloudSync({
     enableSync: enableCloudSync,

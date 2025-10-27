@@ -68,7 +68,7 @@ git commit -m "Initial commit: Learning Resources Hub"
 git branch -M main
 
 # 6. 添加远程仓库（替换成你的 GitHub 用户名）
-git remote add origin https://github.com/your-username/learning-resources-hub.git
+git remote add origin https://github.com/streamxww/learning-resources-hub.git
 
 # 7. 推送代码到 GitHub
 git push -u origin main
