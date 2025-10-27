@@ -178,6 +178,7 @@ git push origin main
 部署成功后，访问：
 ```
 https://your-username.github.io/learning-resources-hub
+https://streamxww.github.io/learning-resources-hub
 ```
 
 **例如**：
